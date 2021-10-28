@@ -8,3 +8,36 @@
     overflow: hidden;
     background-color: whitesmoke;
 }
+
+.logo {
+    float: left;
+}
+
+.link {
+    float: right;
+}
+
+.link a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 32px;
+    text-decoration: none;
+}
+
+.progressBar {
+ width: 90%;
+ height: 30px;
+ background-color: rgb(167, 165, 165);
+ border-radius: 15px;
+}
+
+.nestedDiv {
+    overflow: hidden;
+}
+
+.nestedDiv .bar {
+background-color: rgba(255, 0, 0, 0.87);
+height: 100%;
+width: 0%;
+}
