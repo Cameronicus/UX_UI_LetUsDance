@@ -27,8 +27,21 @@
     text-decoration: none;
 }
 
+.landing{
+    height: 15%;
+    width: 100%;
+    padding: 40px 40px;
+}
+
+.petText {
+    float: left;
+    width: 50%;
+}
+
 .petition {
+    float: right;
     justify-content: center;
+    width: 50%;
 }
 
 .progressBar {
