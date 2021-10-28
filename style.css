@@ -27,10 +27,11 @@
     text-decoration: none;
 }
 
-.landing{
+.landing {
     height: 15%;
     width: 100%;
     padding: 40px 40px;
+    background-color: #c71513;
 }
 
 .petText {
@@ -42,6 +43,7 @@
     float: right;
     justify-content: center;
     width: 50%;
+    background-color: whitesmoke;
 }
 
 .progressBar {
