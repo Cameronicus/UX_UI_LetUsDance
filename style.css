@@ -25,6 +25,10 @@
     text-decoration: none;
 }
 
+.petition {
+    justify-content: center;
+}
+
 .progressBar {
  width: 90%;
  height: 30px;
