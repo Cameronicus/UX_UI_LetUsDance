@@ -1,3 +1,4 @@
+/* Code for nav bar */
 .navigation {
     list-style-type: none;
     margin: 0;
@@ -9,6 +10,7 @@
     background-color: whitesmoke;
 }
 
+/* Code for links */
 .logo {
     float: left;
 }
