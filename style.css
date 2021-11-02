@@ -21,6 +21,10 @@
     float: left;
 }
 
+.navPetBtn {
+    float: right;
+}
+
 .link a {
     display: block;
     color: black;
@@ -40,7 +44,7 @@
 /* Petition code */
 .petText {
     float: left;
-    width: 56%;
+    width: 46%;
     margin-top: 226px;
     margin-left: 100px;
     margin-right: 54px;
