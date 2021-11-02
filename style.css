@@ -23,6 +23,12 @@
 
 .navPetBtn {
     float: right;
+    
+}
+
+.navPetBtn button {
+    padding: 14px 32px;
+    border-radius: 13px;
 }
 
 .link a {
