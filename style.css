@@ -1,3 +1,5 @@
+
+
 /* Code for nav bar */
 .navigation {
     list-style-type: none;
@@ -16,7 +18,7 @@
 }
 
 .link {
-    float: right;
+    float: left;
 }
 
 .link a {
@@ -35,21 +37,23 @@
     padding-top: 2%;
 }
 
+/* Petition code */
 .petText {
     float: left;
-    width: 46%;
-    margin: 1%;
-    padding: 1%;
+    width: 56%;
+    margin-top: 226px;
+    margin-left: 100px;
+    margin-right: 54px;
 }
 
 .petition {
     float: right;
     justify-content: center;
-    width: 46%;
+    width: 34%;
     background-color: whitesmoke;
-    margin: 1%;
-    margin-top: 2%;
-    padding: 1%;
+    margin-top: 106px;
+    margin-right: 130px;
+    margin-bottom: 81px;
 }
 
 .progressBar {
