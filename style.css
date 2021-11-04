@@ -14,7 +14,7 @@ html {
     top: 0;
     width: 90%;
     overflow: hidden;
-    background-color: whitesmoke;
+    background-color: white;
     height: 106px;
 }
 
@@ -143,6 +143,7 @@ width: 0%;
 }
 
 .whatsGoingOn h2 {
+    color: #e24429;
     font: 60px "Fengardo Neue";
     padding-top: 51px;
 }
