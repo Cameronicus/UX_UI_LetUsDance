@@ -3,6 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html h3 {
+    font-family: sans-serif;
+}
+
 /* Code for nav bar */
 .navigation {
     list-style-type: none;
@@ -32,8 +36,7 @@ html {
 /* Button code */
 
 .navPetBtn {
-    float: right;
-    
+    float: right;    
 }
 
 .navPetBtn button {
@@ -46,7 +49,6 @@ html {
 }
 
 .primaryButton {
-    
     background-color: #e24429;
     border-radius: 13px;
 }
@@ -54,6 +56,10 @@ html {
 .primaryButton a {
     color: white;
     font-weight: bold;
+}
+
+.primaryButton a:link { 
+    text-decoration: none;
 }
 
 .secondButton {
@@ -77,7 +83,6 @@ html {
     height: fit-content;
     width: 100%;
     overflow: hidden;
-    background-color: #F6F7F8;
     padding-top: 2%;
 }
 
@@ -93,7 +98,7 @@ html {
 
 .petText h1{
  color: black;
- font: bold 56px 'Fengardo Neue', sans-serif;
+ font: bold 56px 'Fengardo Neue';
 }
 
 .petText h3 {
@@ -101,8 +106,95 @@ html {
     word-spacing: 50;
 }
 
-.petText {
-    padding: 0;
+/* Petition form code */
+.form {
+    width: 90%;
+    padding: 2% 2% 20% 2%;
+    box-shadow: 0 3px 10px #e24429;
+}
+
+.form>h2{
+    font:24px 'Metropolis', sans-serif;
+    width:100%;
+    text-align: center;
+}
+
+form{
+    display:grid;
+    grid-template-columns:12.5% 8% 25% 8% 25% 8% 12.5%;
+    grid-template-rows:6% 20% 25% 16.6% 6% 16.6% 14% 16.6%;
+    row-gap: 2%;
+}
+
+.fname>label, .lname>label, .email>label{
+    font: 14px 'SF Pro Display', sans-serif;
+     color:#E24429;
+     letter-spacing:5%;/*keeps readjusting*/
+     line-height: 24px;
+     padding: 1%;}
+
+#fname, #lname{
+    width:100%;
+    font: 'SF Pro Display', sans-serif;}
+
+.fname {
+        grid-area:2 / 2 / 2 / 4;}
+.lname{
+        grid-area: 2/5/2/7;}
+.email{
+        grid-area: 3/2/3/7; }
+#email{
+        width:100%;
+        display:block;
+         }
+
+input[type=text]{
+     width:100%;
+     height:2.5rem;
+     border:none;
+     padding: 15px;
+     background-color: white;
+     color:#6C6C6C;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+     border-radius: 10px;
+}
+
+
+.checkBoxDisplay>label,.checkBoxShare>label{ 
+    font: 14px 'SF Pro Display', sans-serif; 
+    color: #6C6C6C;
+}
+
+.checkBoxShare{
+    grid-area: 4/2/4/7;}
+
+.checkBoxDisplay{ 
+    grid-area:6/2/6/7;}
+
+
+input [type="checkbox"]{
+        position: relative;}
+
+.mainAction{
+grid-area:7 / 2 / 7 /7;
+height:2.5rem;
+font:24px 'Metropolis', sans-serif; 
+font-weight:700; 
+display:flex; 
+justify-content: center;
+align-items:center;
+color:white; 
+background-color: #E24429;
+border:none; 
+border-radius:1.5rem;
+}
+
+
+form>p {
+    font: 10px 'SF Pro Display', sans-serif;
+    color:#C4C4C4;
+    text-align: center;
+    grid-area:8 / 2 / 8 /7;
 }
 
 .petition {
@@ -115,11 +207,13 @@ html {
     margin-bottom: 81px;
 }
 
+/* Progress bar code */
 .progressBar {
- width: 90%;
- height: 30px;
- background-color: rgb(167, 165, 165);
- border-radius: 15px;
+    display:flex; 
+    width: 90%;
+    height: 13px;
+    background-color: rgb(167, 165, 165);
+    border-radius: 12px;
 }
 
 .nestedDiv {
@@ -128,6 +222,7 @@ html {
 
 .nestedDiv .bar {
 background-color: rgba(255, 0, 0, 0.87);
+border-radius:10px; 
 height: 100%;
 width: 0%;
 }
@@ -136,12 +231,14 @@ width: 0%;
 .whatsGoingOn {
     float: right;
     width: 50%;
+    
 }
 
 .whatsGoingOn p {
     margin-top: 5%;
 }
 
+/* code for headers in About */
 .whatsGoingOn h2 {
     color: #e24429;
     font: 60px "Fengardo Neue";
@@ -151,4 +248,18 @@ width: 0%;
 .whatsGoingOn h3 {
     padding-top: 58px;
     padding-bottom: 422px;
+}
+
+/* Infographics code area */
+.infographics {
+    text-align: center;
+}
+
+/* Setting alternating background colours */
+.offColour {
+    background-color: #F6F7F8;
+}
+
+.onColour {
+    background-color: white;
 }
