@@ -1,4 +1,7 @@
-
+/* Scroll code */
+html {
+    scroll-behavior: smooth;
+}
 
 /* Code for nav bar */
 .navigation {
@@ -37,10 +40,29 @@
     padding: 14px 32px;
 }
 
+.petText button {
+    padding: 1.5% 2% 1.5% 2%;
+    margin-left: 5%;
+}
+
 .primaryButton {
-    color: white;
+    
     background-color: #e24429;
     border-radius: 13px;
+}
+
+.primaryButton a {
+    color: white;
+    font-weight: bold;
+}
+
+.secondButton {
+    font-weight: bold;
+    color: #e24429;
+    border-radius: 13px;
+    border: 1px black solid;
+    padding: 1.5% 2% 1.5% 2%;
+    margin-left: 15%;
 }
 
 .link a {
