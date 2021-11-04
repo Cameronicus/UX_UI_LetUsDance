@@ -34,7 +34,6 @@ html h3 {
 }
 
 /* Button code */
-
 .navPetBtn {
     float: right;    
 }
@@ -69,6 +68,13 @@ html h3 {
     border: 1px black solid;
     padding: 1.5% 2% 1.5% 2%;
     margin-left: 15%;
+}
+
+.thirdButton {
+    color: white;
+    background-color: #e24429;
+    padding: 1% 2% 1% 2%;
+    border-radius: 13px;
 }
 
 .link a {
@@ -254,14 +260,22 @@ width: 0%;
 /* code for headers in About */
 .whatsGoingOn h2 {
     color: #e24429;
-    font: 60px "Fengardo Neue";
+    font: 60px 'Fengardo Neue';
     }
 
 .whatsGoingOn h3 {
     padding-top: 5%;
 }
 
+/* Incentives section */
+.incentive {
+    text-align: center;
+    padding: 3%;
+}
 
+.incentive h1 {
+    font-size: 56px;
+}
 
 /* Setting alternating background colours */
 .offColour {
@@ -274,6 +288,13 @@ width: 0%;
 .onColour {
     background-color: white;
 }
+
+.footer {
+    background-color: black;
+}
+
+/* Footer code area */
+
 
 @media screen and (max-width: 1378px)  { 
     .petition {border:4px solid green;
