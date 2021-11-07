@@ -16,10 +16,11 @@ html h3 {
     padding-right: 5%;
     position: fixed;
     top: 0;
-    width: 90%;
+    width: 100%;
     overflow: hidden;
     background-color: white;
     height: 106px;
+    z-index: 1;
 }
 
 /* Code for links */
@@ -144,7 +145,7 @@ form{
     font: 'SF Pro Display', sans-serif;}
 
 .fname {
-        grid-area:2 / 2 / 2 / 4;}
+        grid-area: 2/ 2/ 2/ 4;}
 .lname{
         grid-area: 2/5/2/7;}
 .email{
@@ -175,14 +176,14 @@ input[type=text]{
     grid-area: 4/2/4/7;}
 
 .checkBoxDisplay{ 
-    grid-area:6/2/6/7;}
+    grid-area: 5/2/5/7;}
 
 
 input [type="checkbox"]{
         position: relative;}
 
 .mainAction{
-grid-area:7 / 2 / 7 /7;
+grid-area:6 / 2 / 6 /7;
 height:2.5rem;
 font:24px 'Metropolis', sans-serif; 
 font-weight:700; 
@@ -200,7 +201,7 @@ form>p {
     font: 10px 'SF Pro Display', sans-serif;
     color:#C4C4C4;
     text-align: center;
-    grid-area:8 / 2 / 8 /7;
+    grid-area:7/2/7/7;
 }
 
 .petition {
@@ -290,6 +291,107 @@ width: 0%;
     background-color: white;
 }
 
+/* Carousel code area */
+.testContainer {
+margin: 3%;
+}
+
+.testText {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-left: 3%;
+    background-color:#F6F7F8;
+    border-radius: 13px;
+    overflow:hidden;
+}
+
+.quote {
+    float: right;
+    padding: 4%;
+}
+
+.quote h1 {
+    font-size: 52px;
+}
+
+.testImage {
+    float: left;
+    margin-left: 3%;
+    z-index: 0;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.testamonials {display:block}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.carousel {
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 60px;
+  user-select: none;
+  background-color: #b63720;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 60px;
+  padding: 16px;
+}
+
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  border: 1px #b63720 solid;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #b63720;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
 
 /* Footer code area */
@@ -299,12 +401,32 @@ width: 0%;
     padding-top: 26px;
     padding-left: 5%;
     padding-right: 5%;
-    width: 90%;
+    padding-bottom: 3%;
+    width: 100%;
     overflow: hidden;
     display: inline-flex;
     background-color: black;
     height: 98px;
 }
+
+.footLogo {
+    float: left;
+    width: 7.313rem;
+}
+
+.footTitle {
+    margin-left: 40%;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
 
 @media screen and (max-width: 1378px)  { 
     .petition {border:4px solid green;
@@ -315,4 +437,10 @@ margin-right: 2%;}
 form {
     grid-template-rows:6% 20% 25% 16.6% 3% 14% 10% 16.6%;
 }
+.footTitle {
+margin-left: 20% ;
+}
+
+.prev, .next,.text {font-size: 11px}
+
 }
