@@ -16,7 +16,7 @@ html h3 {
     padding-right: 5%;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 90%;
     overflow: hidden;
     background-color: white;
     height: 106px;
@@ -320,69 +320,11 @@ margin: 3%;
     z-index: 0;
 }
 
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.testamonials {display:block}
-img {vertical-align: middle;}
-
 /* Slideshow container */
 .carousel {
   position: relative;
   margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 60px;
-  user-select: none;
-  background-color: #b63720;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 60px;
-  padding: 16px;
-}
-
-
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  border: 1px #b63720 solid;
-  background-color: whitesmoke;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #b63720;
+  display: block;
 }
 
 /* Fading animation */
@@ -406,16 +348,29 @@ img {vertical-align: middle;}
     overflow: hidden;
     display: inline-flex;
     background-color: black;
-    height: 98px;
+    height: 106px;
 }
 
 .footLogo {
     float: left;
     width: 7.313rem;
+    margin-bottom: 2%;
 }
 
 .footTitle {
-    margin-left: 40%;
+    margin-left: 38%;
+}
+
+.footLinks {
+    float: right;
+    padding-left: 3%;
+    
+}
+
+.footLinks img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 2%;
 }
 
 @-webkit-keyframes fade {
